@@ -24,7 +24,7 @@ Project demonstration:  active directory deployment, client maintenance in Azure
 ![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/4b58ce4e-e37e-4e80-89fc-007a12d84c11)
 </p>
 <p>
-I begin  with creating a domain controller virtual machine with Azure. The domain controller will be static instead of dynamic to ensure proper connectivity and maintain network reliability. Next, the client virtual machine is created using b both the Azure group name on the same virtual network as the domain controller. 
+I begin  with creating a domain controller (DC-1) virtual machine with Azure. The domain controller will be static instead of dynamic to ensure proper connectivity and maintain network reliability. Next, the client virtual machine (CLIENT-1) is created using both the Azure group name and the same virtual network as the domain controller. 
 </p>
 <br />
 <p>
@@ -38,7 +38,7 @@ I begin  with creating a domain controller virtual machine with Azure. The domai
 
 </p>
 <p>
-To ensure connectivity between both the client and domain controller, I log in to the client via  remote desktop and ping the domain controller's private IP address using the  ping -t command. While the ping's are in a  perpetual state, I log in to the domain controller to enable ICMPv4 on the local Windows Firewall - Core Networking Echo Request. Upon review, the initial ping is now successful. 
+To ensure connectivity between both the client and domain controller, I log into CLIENT-1 via  remote desktop and ping the domain controller's private IP address using the  ping -t command. While the ping is perpetually timed out (due to it not receiving the reply message from the server), I log in to the domain controller to enable ICMPv4 on the local Windows Firewall - Core Networking Echo Request. Upon review of Client-1, the initial ping is now successful. 
 </p>
 
 <br />
@@ -46,7 +46,7 @@ To ensure connectivity between both the client and domain controller, I log in t
 ![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/a468eede-0457-4362-a5eb-ed01af464d61)
 
 <p>
-Continuing, I log in to the domain controller and install Active Directory Domain Services. 
+Continuing, I log in to the domain controller (DC-1) and install Active Directory Domain Services. 
 </p>
 
 <br /> 
@@ -128,11 +128,32 @@ To set up the Remote Desktop for non-administrative users on the client's comput
 
 ![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/cea2fbb7-4743-432c-a62c-4651b805d351)
 
+<br />
 
 <p>
-For further study, I located a name generator for Active Directory names for general login attempts and situational instances. The code for this portion was uploaded and implemented via Powershell ISE file. Upon execution, it generated a list of five thousand names. 
+For further study, I located a name generator for Active Directory. The code for this portion was uploaded and implemented via Powershell ISE (as administrator). Upon execution, it generated a list of five thousand names. 
 </p>
 
+<br />
 
+![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/712e8447-ff16-47a4-aa80-36b6c2decb04)
 
+<p>
+Once completed I opened the ADUC Active Directory Users and Computer to observe the generated names. I chose the name "Baf Dok" for experimentation. 
+</p>
 
+<br />
+
+![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/410c8f7b-89a3-4a13-9e2d-bad72acfacd0)
+
+<p>
+Logging out from Admin Jane Doe to Baf Dok was relatively easy as non-administrative users are permitted to access this client. 
+</p>
+
+<br />
+
+![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/7fb1f196-f3bc-438d-a763-03dbd123fdd2)
+
+<p>
+For verification, I open the command line to execute both 'whoami' and 'hostname' commands. 
+</p>
