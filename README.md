@@ -1,4 +1,4 @@
-# active-directory-deployment
+# Configuring On-premises Active Directory with Azure VMs
 
 Project demonstration:  active directory deployment, client maintenance in Azure Virtual environment. 
 
