@@ -20,7 +20,9 @@ Project demonstration:  active directory deployment, client maintenance in Azure
 <h2>Installation Steps</h2>
 
 <p>
-![Active Directory_Virtual Machines](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/f99d7f5f-57fd-4745-8128-0f75cfe2c294)
+![image](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/4b58ce4e-e37e-4e80-89fc-007a12d84c11)
+
+
 
 </p>
 <p>
