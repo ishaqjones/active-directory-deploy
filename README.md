@@ -28,10 +28,35 @@ I begin  with creating a domain controller virtual machine with Azure. The domai
 </p>
 <br />
 <p>
-  
+
+![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/622b3cd9-5e5d-40aa-8858-f8f2df8679b6)
+<br />
 ![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/d960018a-837f-4607-96c0-af8e97e73958)
+<br />
+
+
 
 </p>
 <p>
-To ensure connectivity between both the client and domain controller, I log in to the client with a remote desktop and ping the domain  controller's private IP address with ping -t. While perpetual, I log in to the domain controller to enable ICMPv4 on the local Windows Firewall - Core Networking Echo Request. The ping is now successful. 
+To ensure connectivity between both the client and domain controller, I log in to the client via  remote desktop and ping the domain controller's private IP address using the  ping -t command. While the ping's are in a  perpetual state, I log in to the domain controller to enable ICMPv4 on the local Windows Firewall - Core Networking Echo Request. Upon review, the initial ping is now successful. 
 </p>
+
+<br />
+
+![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/a468eede-0457-4362-a5eb-ed01af464d61)
+
+<p>
+Continuing, I log in to the domain controller and install Active Directory Domain Services. 
+</p>
+
+<br /> 
+
+![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/d96896fe-4135-465f-82fd-d1e7480ae3e6)
+
+<p>
+The domain is promoted and set up as a new forest and named "NEWDOMAIN" upon which I restart and log back into the domain under its new moniker. 
+</p>
+
+
+
+
