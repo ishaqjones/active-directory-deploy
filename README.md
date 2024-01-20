@@ -1,4 +1,4 @@
-![image](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/323a4745-8db9-4561-9d93-d3f74cface45)
+![alt text](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/323a4745-8db9-4561-9d93-d3f74cface45)
 
 
 # Configuring On-premises Active Directory with Azure VMs
