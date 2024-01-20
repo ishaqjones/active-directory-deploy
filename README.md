@@ -20,9 +20,10 @@ Project demonstration:  active directory deployment, client maintenance in Azure
 <h2>Installation Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Active Directory_Virtual Machines](https://github.com/ishaqjones/active-directory-deploy/assets/156931487/f99d7f5f-57fd-4745-8128-0f75cfe2c294)
+
 </p>
 <p>
-I begin  with creating a domain controller virtual machine with Azure. The domain controller will be static instead of dynamic to ensure proper connectivity and maintain network reliability. Next the client virtual machine is created using b both the Azure group name on the same virtual network as the domain controller. 
+I begin  with creating a domain controller virtual machine with Azure. The domain controller will be static instead of dynamic to ensure proper connectivity and maintain network reliability. Next, the client virtual machine is created using b both the Azure group name on the same virtual network as the domain controller. 
 </p>
 <br />
