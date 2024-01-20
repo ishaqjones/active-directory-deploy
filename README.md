@@ -1,2 +1,2 @@
 # active-directory-deploy
-Project demonstration:  active directory deployment, and client maintenance in Azure Virtual environment. 
+Project demonstration:  active directory deployment, client maintenance in Azure Virtual environment. 
