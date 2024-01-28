@@ -3,7 +3,7 @@
 
 # Configuring On-premises Active Directory with Azure VMs
 
-Project demonstration:  active directory deployment, client maintenance in Azure Virtual environment. 
+This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines 
 
 <h2>Environments and Technologies Used</h2>
 
